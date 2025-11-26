@@ -37,24 +37,22 @@ Each placeholder is replaced **independently**, and you can optionally assign **
 
 > NOTE: Since Burp uses Jython for Python extensions, and Jython only supports Python 2.7, we need to manually add the `rstr` library to the same folder as the extension file. Therefore, we have the following two options for installation:
 
-### Option 1: With regex support (manual from repo)
-
-1. Clone this repository:
+### Option 1: Using the GitHub Release (Regex support included)
+1. Download the latest release from the [Releases page](https://github.com/ItzzMeGrrr/burp_faker/releases) or clone the repository:
 
 ```bash
-git clone https://github.com/itzzmegrrr/burp_faker.git
+git clone https://github.com/ItzzMeGrrr/burp_faker.git
 ````
 
-2. Make sure **Jython 2.7** is installed (required for Burp extensions).
-3. In Burp Suite, go to **Extensions → Add → Extension Type: Python**, and load `burp_faker.py` from the cloned folder.
-
-> Regex placeholders (`{{burp_faker.regex(...)}}`) will work out of the box since `rstr` is included in the repo.
+2. Open Burp Suite -> **Extensions -> Add**.
+3. Select the `burp_faker.py` file from the cloned folder or downloaded release.
+4. The extension will load with **regex support enabled** (thanks to the bundled `rstr` library).
 
 ---
 
-### Option 2: Without regex support (BApp Store)
+### Option 2: Without regex faker support (BApp Store)
 
-1. Open Burp Suite → **Extensions → BApp Store**
+1. Open Burp Suite -> **Extensions -> BApp Store**
 2. Search for **Burp Faker** and click **Install**
 
 > In this mode, regex placeholders will not work, but all other fake data types are fully functional.
