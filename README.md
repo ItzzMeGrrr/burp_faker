@@ -143,3 +143,6 @@ The placeholder is inserted at the selection and will be replaced automatically 
 ## License
 
 MIT License
+
+## Acknowledgments
+- Thanks to the developers of [rstr](https://pypi.org/project/rstr/) for their excellent library.
